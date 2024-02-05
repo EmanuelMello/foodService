@@ -9,3 +9,5 @@ export const routes: Routes = [
   { path: 'tag/:tag', component: HomeComponent },
   { path: 'food/:id', component: FoodPageComponent },
 ];
+
+

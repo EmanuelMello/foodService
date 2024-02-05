@@ -20,6 +20,8 @@ export class NotFoundComponent implements OnInit {
   @Input()
   resetLinkRoute = '/';
 
+  constructor() { }
+
 
   ngOnInit(): void {
   }

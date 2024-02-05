@@ -13,7 +13,9 @@ import { CommonModule } from '@angular/common';
 export class TagsComponent implements OnInit {
   tags?:Tag[];
   constructor(foodService:FoodService) {
-    this.tags = foodService.getAllTags();
+    foodService.getAllTags().subscribe(serverTags => {
+      this.tags = serverTags;
+    });
    }
 
   ngOnInit(): void {

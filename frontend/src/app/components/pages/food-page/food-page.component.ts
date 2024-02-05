@@ -16,11 +16,13 @@ import { NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
 export class FoodPageComponent implements OnInit {
 
   food!: Food;
-tag: any;
+  tag: any;
   constructor( foodService:FoodService, activatedRoute:ActivatedRoute) {
     activatedRoute.params.subscribe((params) => {
       if(params.id)
-      this.food = foodService.getFoodById(params.id);
+      foodService.getFoodById(params.id).subscribe(serverFood => {
+        this.food = serverFood;
+      });
     })
   }
 
