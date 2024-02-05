@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./not-found.component.css'],
   standalone: true,
   imports: [CommonModule, HttpClientModule]
+
 })
 export class NotFoundComponent implements OnInit {
 

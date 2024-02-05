@@ -5,13 +5,16 @@ import { FoodService } from '../../../services/food.service';
 import { ActivatedRoute } from '@angular/router';
 import { Food } from '../../../shared/models/Food';
 import { NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
+import { NotFoundComponent } from "../../partials/not-found/not-found.component";
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
-  selector: 'app-food-page',
-  standalone: true,
-  imports: [CommonModule, NgbRatingModule],
-  templateUrl: './food-page.component.html',
-  styleUrl: './food-page.component.css'
+    selector: 'app-food-page',
+    standalone: true,
+    templateUrl: './food-page.component.html',
+    styleUrl: './food-page.component.css',
+    imports: [CommonModule, NgbRatingModule, NotFoundComponent, HttpClientModule],
+    providers: [FoodService]
 })
 export class FoodPageComponent implements OnInit {
 
