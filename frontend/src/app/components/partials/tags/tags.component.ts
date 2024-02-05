@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Tag } from '../../../shared/models/tag';
+import { Tag } from '../../../shared/models/Tag';
 import { FoodService } from '../../../services/food.service';
 import { CommonModule } from '@angular/common';
 
