@@ -1,4 +1,19 @@
-
+export const sample_users: any[] = [
+  {
+    name: "Emanuel",
+    email: "emanuel@gmail.com",
+    password: "123",
+    address: "Rua Niteroi, 56",
+    isAdmin: true
+  },
+  {
+    name: "Beatriz",
+    email: "beatriz@gmail.com",
+    password: "456",
+    adress: "Rua Serginep, 287",
+    isAdmin: false
+  }
+]
 export const sample_foods: any[] = [
     {
         id:'1',

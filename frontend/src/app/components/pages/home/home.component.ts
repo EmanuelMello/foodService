@@ -9,6 +9,7 @@ import { TagsComponent } from "../../partials/tags/tags.component";
 import { Observable } from "rxjs";
 import { HttpClientModule } from "@angular/common/http";
 import { NotFoundComponent } from "../../partials/not-found/not-found.component";
+import { LoginPageComponent } from "../login-page/login-page.component";
 
 
 @Component({
@@ -17,7 +18,7 @@ import { NotFoundComponent } from "../../partials/not-found/not-found.component"
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   providers: [FoodService],
-  imports: [CommonModule, NgbRatingModule, SearchComponent, TagsComponent, HttpClientModule, NotFoundComponent]
+  imports: [CommonModule, NgbRatingModule, SearchComponent, TagsComponent, HttpClientModule, NotFoundComponent, LoginPageComponent]
 })
 
 export class HomeComponent implements OnInit {

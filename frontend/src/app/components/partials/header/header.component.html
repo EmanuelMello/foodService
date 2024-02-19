@@ -6,12 +6,12 @@
           <li>
             <a href="/login">Login</a>
           </li>
-          <li class="menu-container">
-            <a href="/dashboard">John</a>
+          <li *ngIf ="user.token" class="menu-container">
+            <a href="/dashboard">Teste</a>
             <div class="menu">
               <a href="/profile">Profile</a>
               <a href="/orders">Orders</a>
-              <a href="/logout">Logout</a>
+              <a (click)="logout()" >Logout</a>
             </div>
           </li>
           <li>
